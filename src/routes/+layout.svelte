@@ -66,7 +66,7 @@
 
 <div class="flex min-h-screen flex-col items-center gap-8" id="parent">
   <nav
-    class="topbar xl: sticky top-0 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/90 py-3 backdrop-blur-sm dark:bg-slate-950/90 sm:justify-end lg:justify-center {scrollDirection ===
+    class="topbar xl: sticky top-0 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/90 py-2 backdrop-blur-sm dark:bg-slate-950/90 sm:justify-end lg:justify-center {scrollDirection ===
     'down'
       ? 'shadow-md'
       : 'shadow-none'}"
@@ -81,7 +81,7 @@
 
     <!-- Mobile Menu -->
     <div
-      class="absolute top-20 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100"
+      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100"
       class:scale-y-100={isMenuOpen}
       class:scale-y-0={!isMenuOpen}
     >

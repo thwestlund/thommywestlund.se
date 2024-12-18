@@ -16,9 +16,9 @@
   <header class="flex flex-col items-center py-14 md:w-2/3 lg:w-1/2">
     <div class="flex flex-col items-center gap-8">
       <img
-        src="{selfie}"
+        src={selfie}
         alt="Thommy Westlund"
-        class="size-fit h-96 w-96 rounded-full border-8 border-teal-600 transition duration-300 ease-in-out hover:border-teal-800 dark:border-pink-600/80 dark:hover:border-pink-800/80"
+        class="size-fit h-80 w-80 rounded-full border-4 border-teal-600 transition duration-300 ease-in-out hover:border-teal-800 dark:border-pink-600/80 dark:hover:border-pink-800/80 md:h-96 md:w-96 md:border-8"
       />
       <h1 class="font-thin" id="home">Thommy Westlund</h1>
     </div>

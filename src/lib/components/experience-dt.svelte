@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type Experience from "../models/experience";
+  import type Experience from "$lib/assets/models/experience";
   let { notFirst = false, obj = {} as Experience } = $props();
 </script>
 
 <dt
-  class="text-2xl font-bold text-teal-800 dark:text-slate-100 {notFirst
+  class="text-lg font-bold text-teal-800 dark:text-slate-100 md:text-2xl {notFirst
     ? 'mt-8'
     : ''}"
 >
