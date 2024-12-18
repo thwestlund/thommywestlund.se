@@ -37,6 +37,7 @@
         </dl>
       </div>
       <Btn
+        cta={true}
         name={showAllSkills
           ? "Visa färre färdigheter"
           : "Visa fler färdigheter"}
@@ -61,7 +62,7 @@
 
     <section
       id="contact"
-      class="flex w-10/12 flex-col gap-4 pb-14 pt-8 md:w-2/3 lg:w-1/2"
+      class="flex w-10/12 flex-1 flex-col gap-4 pb-14 pt-8 md:w-2/3 lg:w-1/2"
     >
       <h2>Kontakt</h2>
       <div class="flex w-10/12 flex-row gap-4 sm:w-full md:w-2/3 lg:w-1/2">

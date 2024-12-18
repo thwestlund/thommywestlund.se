@@ -10,7 +10,7 @@
 >
   {obj.title} - {obj.role}
 </dt>
-<dd class="flex flex-col gap-4 md:flex-row">
+<dd class="flex flex-col gap-2 md:flex-row md:gap-4">
   <div class="flex flex-row items-center gap-1">
     <svg
       xmlns="http://www.w3.org/2000/svg"

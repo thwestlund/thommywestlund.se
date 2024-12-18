@@ -4,6 +4,7 @@
   import { replaceState } from "$app/navigation";
   import { onMount } from "svelte";
   import { PUBLIC_LINKEDIN } from "$env/static/public";
+  import Btn from "$lib/components/btn.svelte";
   let { children } = $props();
   let scrollDirection = $state("up"); // Tracks scroll direction ('up' or 'down')
   let lastScrollY = 0; // Tracks the last scroll position
@@ -81,7 +82,7 @@
 
     <!-- Mobile Menu -->
     <div
-      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100"
+      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100 lg:hidden"
       class:scale-y-100={isMenuOpen}
       class:scale-y-0={!isMenuOpen}
     >
@@ -118,13 +119,10 @@
       </ul>
     </div>
 
-    <button
-      class="flex flex-row gap-2 rounded-3xl px-6 py-2.5 text-lg font-semibold hover:bg-teal-900 hover:text-white dark:text-slate-100 dark:hover:bg-pink-900"
-      onclick={toggleTheme}
-    >
+    <Btn class="flex flex-row gap-2" on:click={toggleTheme}>
       <div>{isDarkMode ? "☀️" : "🌙"}</div>
       <div>{isDarkMode ? "Ljust läge" : "Mörkt läge"}</div>
-    </button>
+    </Btn>
 
     <!-- Burger Icon -->
     <button
@@ -167,8 +165,8 @@
     <div
       class="flex w-10/12 flex-col justify-between gap-20 pt-2 md:w-2/3 lg:w-1/2"
     >
-      <div class="flex w-10/12 flex-row md:w-2/3 lg:w-1/2">
-        <div class="flex w-10/12 flex-col gap-1 md:w-2/3 lg:w-1/2">
+      <div class="flex w-10/12 flex-row gap-4 md:w-2/3 lg:w-1/2">
+        <div class="flex w-10/12 flex-col gap-2 md:w-2/3 lg:w-1/2">
           <h3>Kontakt</h3>
           <a href={PUBLIC_LINKEDIN} class="text-sm hover:underline">LinkedIn</a>
           <a
@@ -176,7 +174,7 @@
             class="text-sm hover:underline">Maila mig</a
           >
         </div>
-        <div class="flex w-10/12 flex-col gap-1 md:w-2/3 lg:w-1/2">
+        <div class="flex w-10/12 flex-col gap-2 md:w-2/3 lg:w-1/2">
           <h3>Diverse</h3>
           <a href="/projects" class="text-sm hover:underline">Projekt</a>
           <a
@@ -189,8 +187,7 @@
       <p
         class="text-center align-bottom text-sm leading-6 text-white dark:text-slate-100"
       >
-        © 2024, Forge IT Solutions AB, Org.nr. 559502-1923 - All rights
-        reserved
+        © 2024, Forge IT Solutions AB, Org.nr. 559502-1923
       </p>
     </div>
   </footer>
