@@ -1,6 +1,6 @@
 <script>
   import "../app.css";
-  import MenuItem from "../components/menu-item.svelte";
+  import MenuItem from "$lib/components/menu-item.svelte";
   import { replaceState } from "$app/navigation";
   import { onMount } from "svelte";
   import { PUBLIC_LINKEDIN } from "$env/static/public";

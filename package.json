@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "minify": "npx tailwindcss -o static/global.css --minify"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.0.0",

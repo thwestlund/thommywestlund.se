@@ -1,11 +1,12 @@
 <script lang="ts">
-  import "../components/level-bar.svelte";
-  import Skill from "../components/skill.svelte";
-  import skills from "../assets/data/skills";
-  import ExperienceDt from "../components/experience-dt.svelte";
-  import { exp } from "../assets/data/experience";
-  import LinkBtn from "../components/link-btn.svelte";
-  import Btn from "../components/btn.svelte";
+  import "$lib/components/level-bar.svelte";
+  import Skill from "$lib/components/skill.svelte";
+  import skills from "$lib/assets/data/skills";
+  import ExperienceDt from "$lib/components/experience-dt.svelte";
+  import { exp } from "$lib/assets/data/experience";
+  import LinkBtn from "$lib/components/link-btn.svelte";
+  import Btn from "$lib/components/btn.svelte";
+  import selfie from "$lib/assets/images/me.jpg";
   import { PUBLIC_LINKEDIN } from "$env/static/public";
   let experiences = [...exp];
   let showAllSkills: boolean = $state(false);
@@ -15,13 +16,13 @@
   <header class="flex flex-col items-center py-14 md:w-2/3 lg:w-1/2">
     <div class="flex flex-col items-center gap-8">
       <img
-        src="/src/assets/photos/me.jpg"
+        src="{selfie}"
         alt="Thommy Westlund"
         class="size-fit h-96 w-96 rounded-full border-8 border-teal-600 transition duration-300 ease-in-out hover:border-teal-800 dark:border-pink-600/80 dark:hover:border-pink-800/80"
       />
       <h1 class="font-thin" id="home">Thommy Westlund</h1>
     </div>
-  </header>
+  </header>z
   <main class="flex w-full flex-col items-center gap-8">
     <section
       class="flex w-full scroll-py-96 flex-col items-center gap-8 bg-pink-50 py-14 shadow-lg dark:bg-slate-900 dark:shadow-slate-950"

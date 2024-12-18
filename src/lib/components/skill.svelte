@@ -1,6 +1,6 @@
 <script>
-  import "../components/level-bar.svelte";
-  import LevelBar from "../components/level-bar.svelte";
+  import "$lib/components/level-bar.svelte";
+  import LevelBar from "$lib/components/level-bar.svelte";
 
   let { name = "", level = 0 } = $props();
 </script>
