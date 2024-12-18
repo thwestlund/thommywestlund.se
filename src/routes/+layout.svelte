@@ -112,7 +112,7 @@
         </li>
         <li class="contents">
           <a href="/projects" class="p-4" onclick={() => (isMenuOpen = false)}>
-            Project
+            Projekt
           </a>
         </li>
       </ul>
