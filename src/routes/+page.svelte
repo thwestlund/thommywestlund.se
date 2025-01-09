@@ -38,13 +38,14 @@
       </div>
       <Btn
         cta={true}
-        name={showAllSkills
-          ? "Visa färre färdigheter"
-          : "Visa fler färdigheter"}
-        on:click={() => {
+        styling="custom-class"
+        onclick={() => {
           showAllSkills = !showAllSkills;
         }}
-      />
+        >{showAllSkills
+          ? "Visa färre färdigheter"
+          : "Visa fler färdigheter"}</Btn
+      >
     </section>
 
     <section

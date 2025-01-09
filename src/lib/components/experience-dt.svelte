@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type Experience from "$lib/assets/models/experience";
+  import type Experience from "$lib/assets/models/iExperience";
   let { notFirst = false, obj = {} as Experience } = $props();
 </script>
 

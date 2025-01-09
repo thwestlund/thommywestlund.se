@@ -119,7 +119,7 @@
       </ul>
     </div>
 
-    <Btn class="flex flex-row gap-2" on:click={toggleTheme}>
+    <Btn styling="flex flex-row gap-2" onclick={toggleTheme}>
       <div>{isDarkMode ? "☀️" : "🌙"}</div>
       <div>{isDarkMode ? "Ljust läge" : "Mörkt läge"}</div>
     </Btn>

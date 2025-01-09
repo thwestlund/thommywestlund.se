@@ -1,4 +1,4 @@
-import type Skill from "../models/skill";
+import type Skill from "../models/iSkill";
 
 export const skills: Skill[] = [
   // Level 5
