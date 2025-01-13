@@ -8,6 +8,9 @@ export default {
       aspectRatio: {
         "2/3": "2 / 3",
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -1,5 +1,4 @@
 <script lang="ts">
-  import "$lib/components/level-bar.svelte";
   import Skill from "$lib/components/skill.svelte";
   import skills from "$lib/assets/data/skills";
   import ExperienceDt from "$lib/components/experience-dt.svelte";
@@ -8,6 +7,7 @@
   import Btn from "$lib/components/btn.svelte";
   import selfie from "$lib/assets/images/me.jpg";
   import { PUBLIC_LINKEDIN } from "$env/static/public";
+  
   let experiences = [...exp];
   let showAllSkills: boolean = $state(false);
 </script>
