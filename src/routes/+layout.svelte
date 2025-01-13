@@ -160,7 +160,7 @@
   {@render children()}
 
   <footer
-    class="flex w-full justify-center bg-teal-900 py-5 text-slate-100 dark:bg-pink-900"
+    class="flex w-full justify-center bg-teal-900 pt-5 text-slate-100 dark:bg-pink-900"
   >
     <div
       class="flex w-10/12 flex-col justify-between gap-20 pt-2 md:w-2/3 lg:w-1/2"
