@@ -7,7 +7,6 @@
   let { children } = $props();
   let scrollDirection = $state("up"); // Tracks scroll direction ('up' or 'down')
   let lastScrollY = 0; // Tracks the last scroll position
-  let activeSection = $state("");
   let isMenuOpen = $state(false);
   let isDarkMode = $state(false);
   const linkedin = import.meta.env.VITE_PUBLIC_LINKEDIN;

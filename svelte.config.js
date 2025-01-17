@@ -13,7 +13,10 @@ const config = {
       assets: 'build',
       fallback: undefined,
       precompress: false,
-      strict: true
+      strict: true,
+      prerender: {
+        entries: ['*'] // This will prerender all entries, including dynamic ones
+      },
     }),
     paths: {
       base: ''
