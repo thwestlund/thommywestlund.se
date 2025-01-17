@@ -6,8 +6,7 @@
   import LinkBtn from "$lib/components/link-btn.svelte";
   import Btn from "$lib/components/btn.svelte";
   import selfie from "$lib/assets/images/me.jpg";
-  import { PUBLIC_LINKEDIN } from "$env/static/public";
-  
+  const linkedin = import.meta.env.VITE_PUBLIC_LINKEDIN;
   let experiences = [...exp];
   let showAllSkills: boolean = $state(false);
 </script>
@@ -71,7 +70,7 @@
           name="Skicka mail"
           href={"mailto:" + import.meta.env.VITE_CONTACT_EMAIL}
         />
-        <LinkBtn name="LinkedIn" href={PUBLIC_LINKEDIN} />
+        <LinkBtn name="LinkedIn" href={linkedin} />
       </div>
     </section>
   </main>
