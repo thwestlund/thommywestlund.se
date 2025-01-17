@@ -11,16 +11,13 @@ const config = {
     adapter: adapter({
       pages: 'build',
       assets: 'build',
-      fallback: undefined,
+      fallback: 'index.html',
       precompress: false,
       strict: true,
       prerender: {
         entries: ['*'] // This will prerender all entries, including dynamic ones
       },
     }),
-    paths: {
-      base: ''
-    }
   },
   preprocess: vitePreprocess(),
 };
