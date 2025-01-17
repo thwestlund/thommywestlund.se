@@ -5,6 +5,6 @@
 </script>
 
 <div class="flex flex-col gap-12 w-full items-center">
-<InfoCard></InfoCard>
-<Content></Content>
+    <InfoCard></InfoCard>
+    <Content></Content>
 </div>
