@@ -3,9 +3,8 @@
   import MenuItem from "$lib/components/menu-item.svelte";
   import { replaceState } from "$app/navigation";
   import { onMount } from "svelte";
-  const PUBLIC_LINKEDIN = "your-linkedin-url";
+  import { PUBLIC_LINKEDIN } from "$env/static/public";
   import Btn from "$lib/components/btn.svelte";
-  import { base } from '$app/paths';
   let { children } = $props();
   let scrollDirection = $state("up"); // Tracks scroll direction ('up' or 'down')
   let lastScrollY = 0; // Tracks the last scroll position
