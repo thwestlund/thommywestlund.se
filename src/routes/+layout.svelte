@@ -4,12 +4,14 @@
   import { replaceState } from "$app/navigation";
   import { onMount } from "svelte";
   import Btn from "$lib/components/btn.svelte";
+
   let { children } = $props();
   let scrollDirection = $state("up"); // Tracks scroll direction ('up' or 'down')
   let lastScrollY = 0; // Tracks the last scroll position
   let isMenuOpen = $state(false);
   let isDarkMode = $state(false);
   const linkedin = import.meta.env.VITE_PUBLIC_LINKEDIN;
+
   onMount(() => {
     window.addEventListener("scroll", handleScroll);
     const sections = document.querySelectorAll("section, h1");
