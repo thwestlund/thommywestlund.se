@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      VITE_CONTACT_EMAIL: ${{ vars.VITE_CONTACT_EMAIL }}
+      VITE_PUBLIC_LINKEDIN: ${{ vars.VITE_PUBLIC_LINKEDIN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
