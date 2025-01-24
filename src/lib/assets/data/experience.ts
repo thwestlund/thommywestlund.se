@@ -70,6 +70,7 @@ export const exp: Experience[] = [
     bulletList: [
       "Göra en grundlig tillgänglighetsutvärdering av mobilapplikationen Geofoto.",
       "Genomföra genomgående tillgänglighetstestning i Android och iOS för Geofoto.",
+      "Agera kravställare för Geofoto kring tillgänglighet i enlighet med DOS-lagen, EN 301 549 och WCAG.",
       "Funktionstesta applikationen Geofoto.",
       "Medverka och leda workshops kring UX/UI-arbete, däribland förbättring av processer, samt verktyg.",
       "Ta fram skisser och prototyper för systemet Saga.",

@@ -67,7 +67,7 @@
 
 <div class="flex min-h-screen flex-col items-center" id="parent">
   <nav
-    class="topbar xl: sticky top-0 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/75 py-2 backdrop-blur-sm dark:bg-slate-950/75 transition-all sm:justify-end lg:justify-center {scrollDirection ===
+    class="topbar xl: sticky top-0 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/75 py-2 backdrop-blur-sm transition-all dark:bg-slate-950/75 sm:justify-end lg:justify-center {scrollDirection ===
     'down'
       ? 'shadow-md'
       : 'shadow-none'}"

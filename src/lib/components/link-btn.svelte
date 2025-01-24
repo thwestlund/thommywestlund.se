@@ -7,9 +7,9 @@
 <a
   {href}
   target={newTab ? "_blank" : "_self"}
-  class="rounded-3xl bg-teal-800 px-4 py-2.5 flex flex-row gap-1 font-semibold items-center text-white hover:bg-teal-900 hover:text-white hover:underline dark:bg-pink-800 dark:text-slate-100 dark:hover:bg-pink-900 md:px-6 md:py-2.5 md:text-lg"
-  >{name} {#if newTab}
-  <Icon icon="mdi:open-in-new"></Icon>
+  class="flex flex-row items-center gap-1 rounded-3xl bg-teal-800 px-4 py-2.5 font-semibold text-white hover:bg-teal-900 hover:text-white hover:underline dark:bg-pink-800 dark:text-slate-100 dark:hover:bg-pink-900 md:px-6 md:py-2.5 md:text-lg"
+  >{name}
+  {#if newTab}
+    <Icon icon="mdi:open-in-new"></Icon>
   {/if}
-  </a
->
+</a>

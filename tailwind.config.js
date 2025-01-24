@@ -9,7 +9,7 @@ export default {
         "2/3": "2 / 3",
       },
       fontFamily: {
-        roboto: ['Roboto', 'sans-serif'],
+        roboto: ["Roboto", "sans-serif"],
       },
     },
   },
