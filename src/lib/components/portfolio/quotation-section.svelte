@@ -5,7 +5,7 @@
   } = $props();
 </script>
 
-<div class="flex w-full flex-1 flex-col items-center gap-4">
+<div class="flex w-full flex-1 flex-col items-center gap-4 text-center">
   <h3>{sectionTitle}</h3>
   <div><p><i>{@html sectionContent}</i></p></div>
 </div>

@@ -13,7 +13,7 @@
 </script>
 
 <div
-  class="flex w-full flex-col items-center gap-4 bg-pink-50 py-16 dark:bg-sky-950/30"
+  class="flex w-full flex-col items-center gap-4 bg-pink-50 py-16 shadow-lg dark:bg-sky-950/30"
 >
   <div
     class="flex w-full flex-col items-center p-6 md:w-2/3 lg:w-1/2 lg:flex-row"

@@ -109,7 +109,7 @@ export const exp: Experience[] = [
     ],
     bulletList: [
       "Analysera existerande krav- och behovsunderlag.",
-      "Intervjua anställda för att ta tillsammans ska deras nya processer.",
+      "Intervjua anställda för att tillsammans skapa deras nya processer.",
       "Ta fram skisser och prototyper i Figma baserat på Material Design.",
       "Rekonstruera backloggen i Azure DevOps baserat på User Stories och Scenarion som jag skapade.",
       "Medverka i uppsättningen av CD/CI-Pipeline i Azure DevOps, GitHub och Azure Cloud.",

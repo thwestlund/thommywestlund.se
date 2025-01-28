@@ -31,7 +31,7 @@
   <hr />
   {#each content.sections as section}
     <div
-      class="flex flex-wrap gap-10 lg:gap-16"
+      class="flex flex-wrap gap-16 lg:gap-24"
       class:flex-col={section.columns === 1}
       class:flex-row={section.columns === 2}
     >

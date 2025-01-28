@@ -1,7 +1,6 @@
 <script>
   import "../app.css";
   import MenuItem from "$lib/components/menu-item.svelte";
-  import { replaceState } from "$app/navigation";
   import { onMount } from "svelte";
   import Btn from "$lib/components/btn.svelte";
 
@@ -67,7 +66,7 @@
 
 <div class="flex min-h-screen flex-col items-center" id="parent">
   <nav
-    class="topbar xl: sticky top-0 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/75 py-2 backdrop-blur-sm transition-all dark:bg-slate-950/75 sm:justify-end lg:justify-center {scrollDirection ===
+    class="topbar xl: sticky top-0 z-50 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/75 py-2 backdrop-blur-sm transition-all dark:bg-slate-950/75 sm:justify-end lg:justify-center {scrollDirection ===
     'down'
       ? 'shadow-md'
       : 'shadow-none'}"
@@ -76,47 +75,8 @@
       <MenuItem name={"Hem"} href={"/"} />
       <MenuItem name={"Färdigheter"} href={"/#skills"} />
       <MenuItem name={"Erfarenheter"} href={"/#experience"} />
+      <MenuItem name={"Portfolio"} href={"/portfolio"} />
       <MenuItem name={"Kontakt"} href={"/#contact"} />
-      <MenuItem name={"Projekt"} href={"/projects"} />
-    </div>
-
-    <!-- Mobile Menu -->
-    <div
-      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100 lg:hidden"
-      class:scale-y-100={isMenuOpen}
-      class:scale-y-0={!isMenuOpen}
-    >
-      <ul class="flex flex-col">
-        <li class="contents">
-          <a href="/#home" class="p-4" onclick={() => (isMenuOpen = false)}>
-            Hem
-          </a>
-        </li>
-        <li class="contents">
-          <a href="/#skills" class="p-4" onclick={() => (isMenuOpen = false)}>
-            Färdigheter
-          </a>
-        </li>
-        <li class="contents">
-          <a
-            href="/#experience"
-            class="p-4"
-            onclick={() => (isMenuOpen = false)}
-          >
-            Erfarenheter
-          </a>
-        </li>
-        <li class="contents">
-          <a href="/#contact" class="p-4" onclick={() => (isMenuOpen = false)}>
-            Kontakt
-          </a>
-        </li>
-        <li class="contents">
-          <a href="/projects" class="p-4" onclick={() => (isMenuOpen = false)}>
-            Projekt
-          </a>
-        </li>
-      </ul>
     </div>
 
     <Btn styling="flex flex-row gap-2" onclick={toggleTheme}>
@@ -126,7 +86,7 @@
 
     <!-- Burger Icon -->
     <button
-      class="block focus:outline-none lg:hidden"
+      class="block lg:hidden"
       onclick={toggleMenu}
       aria-label="Toggle menu"
     >
@@ -155,12 +115,51 @@
         {/if}
       </svg>
     </button>
+
+    <!-- Mobile Menu -->
+    <div
+      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100 lg:hidden"
+      class:scale-y-100={isMenuOpen}
+      class:scale-y-0={!isMenuOpen}
+    >
+      <ul class="flex flex-col">
+        <li class="contents">
+          <a href="/#home" class="p-4" onclick={() => (isMenuOpen = false)}>
+            Hem
+          </a>
+        </li>
+        <li class="contents">
+          <a href="/#skills" class="p-4" onclick={() => (isMenuOpen = false)}>
+            Färdigheter
+          </a>
+        </li>
+        <li class="contents">
+          <a
+            href="/#experience"
+            class="p-4"
+            onclick={() => (isMenuOpen = false)}
+          >
+            Erfarenheter
+          </a>
+        </li>
+        <li class="contents">
+          <a href="/portfolio" class="p-4" onclick={() => (isMenuOpen = false)}>
+            Portfolio
+          </a>
+        </li>
+        <li class="contents">
+          <a href="/#contact" class="p-4" onclick={() => (isMenuOpen = false)}>
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   {@render children()}
 
   <footer
-    class="flex w-full justify-center bg-teal-900 pt-5 text-slate-100 dark:bg-pink-900"
+    class="mt-32 flex w-full justify-center bg-teal-900 pt-5 text-slate-100 dark:bg-pink-900"
   >
     <div
       class="flex w-10/12 flex-col justify-between gap-20 pt-2 md:w-2/3 lg:w-1/2"
@@ -194,7 +193,6 @@
 </div>
 
 <style>
-  /* Optional: Smooth transition for box-shadow */
   .topbar {
     transition: box-shadow 0.5s ease-in-out;
   }
