@@ -1,9 +1,4 @@
 <script lang="ts">
-  import jv from "$lib/assets/images/jv.svg";
-  import kammarkollegiet from "$lib/assets/images/kammarkollegiet.svg";
-  import ovikskommun from "$lib/assets/images/ovikskommun.webp";
-  import ovikshamn from "$lib/assets/images/ovikshamn.svg";
-
   import learning from "$lib/assets/images/undraw_learning-sketchingsh.svg";
   import pedestrian from "$lib/assets/images/undraw_pedestrian-crossing_exov.svg";
   import support from "$lib/assets/images/undraw_team-spirit_18vw.svg";

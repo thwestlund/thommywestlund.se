@@ -8,7 +8,6 @@
 
   onMount(() => {
     imageUrl = content.projectImage.src;
-    console.log(content.challenge);
   });
 </script>
 
@@ -27,7 +26,7 @@
         <div class="flex flex-col gap-8">
           <div class="flex flex-row gap-12">
             <div class="flex flex-1 flex-col gap-3">
-              <h2 class="text-2xl">Utmaningar</h2>
+              <h2 class="text-2xl">Utmaning</h2>
               <p>{@html content.challenge}</p>
             </div>
             <div class="flex flex-1 flex-col gap-3">
@@ -75,7 +74,7 @@
       </div>
 
       {#if content.prototypeLink}
-        <div class="max-w-64">
+        <div class="flex">
           <LinkBtn href={content.prototypeLink} name="Prototyp" />
         </div>
       {/if}

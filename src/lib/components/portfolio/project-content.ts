@@ -18,15 +18,18 @@ export enum SectionType {
   TextImage = "textImage",
   Image = "image",
   Quotation = "quotation",
+  Section = "section",
 }
 
 type SectionContent =
   | TextSection
   | TextImageSection
   | QuotationSection
-  | ImageSection;
+  | ImageSection
+  | Section;
 
-type Section = {
+export type Section = {
+  type: SectionType.Section;
   columns: number;
   content: SectionContent[];
 };
@@ -145,6 +148,7 @@ export const createSection = ({
   columns: number;
   content: SectionContent[];
 }): Section => ({
+  type: SectionType.Section,
   columns,
   content,
 });

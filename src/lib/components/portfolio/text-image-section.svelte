@@ -1,8 +1,9 @@
 <script lang="ts">
   import TextSection from "./text-section.svelte";
   import { onMount } from "svelte";
+  import ImageSection from "./image-section.svelte";
 
-  let isSmallScreen = $state(false); // Variable to track screen size
+  let isSmallScreen = $state(false);
 
   const checkScreenSize = () => {
     isSmallScreen = window.innerWidth < 1280;
@@ -31,12 +32,8 @@
   {#if textLeft || isSmallScreen}
     <TextSection {sectionTitle} {sectionContent} styling=" xl:min-w-80" />
   {/if}
-  <img
-    src={imageSrc}
-    alt={imageAlt}
-    class="max-h-160 min-w-10 max-w-full rounded-lg object-contain shadow-lg lg:max-w-96"
-  />
   {#if !textLeft && !isSmallScreen}
+  <ImageSection src={imageSrc} alt={imageAlt} fullWidth={false}/>
     <TextSection {sectionTitle} {sectionContent} />
   {/if}
 </div>
