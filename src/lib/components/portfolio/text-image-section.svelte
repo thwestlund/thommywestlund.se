@@ -33,7 +33,7 @@
     <TextSection {sectionTitle} {sectionContent} styling=" xl:min-w-80" />
   {/if}
   {#if !textLeft && !isSmallScreen}
-  <ImageSection src={imageSrc} alt={imageAlt} fullWidth={false}/>
+    <ImageSection src={imageSrc} alt={imageAlt} fullWidth={false} />
     <TextSection {sectionTitle} {sectionContent} />
   {/if}
 </div>

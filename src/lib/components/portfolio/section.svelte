@@ -6,13 +6,11 @@
   import { SectionType } from "./project-content";
   import Section from "./section.svelte";
   import { type Section as SectionT } from "./project-content";
-  
+
   const { ...content }: SectionT = $props();
 </script>
 
-<div
-  class="grid flex-wrap gap-8 lg:gap-16 lg:grid-cols-{content.columns}"
->
+<div class="grid flex-wrap gap-8 lg:gap-16 lg:grid-cols-{content.columns}">
   {#each content.content as item}
     {#if item.type === SectionType.Text}
       <TextSection
@@ -36,7 +34,7 @@
     {:else if item.type === SectionType.Image}
       <ImageSection src={item.image.src} alt={item.image.alt} />
     {:else if item.type === SectionType.Section}
-        <Section {...content}/>
+      <Section {...content} />
     {/if}
   {/each}
 </div>

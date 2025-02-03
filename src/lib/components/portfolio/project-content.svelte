@@ -15,7 +15,7 @@
     <h2>{content.projectCatchPhrase}</h2>
     <span>Projektets bakgrund</span>
   </div>
-  <div class="flex flex-col lg:flex-row gap-8">
+  <div class="flex flex-col gap-8 lg:flex-row">
     <TextSection
       sectionTitle={content.problemStatementHeader}
       sectionContent={content.problemStatementDescription}
@@ -59,9 +59,12 @@
           <hr />
         {:else if item.type === SectionType.Image}
           <ImageSection src={item.image.src} alt={item.image.alt} />
-
         {:else if item.type === SectionType.Section}
-          <Section content={item.content} columns={item.columns} type={item.type}/>
+          <Section
+            content={item.content}
+            columns={item.columns}
+            type={item.type}
+          />
         {/if}
       {/each}
     </div>
