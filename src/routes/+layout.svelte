@@ -88,7 +88,7 @@
   >
     <a
       href="#main-content"
-      class="skip-link fixed left-4 top-4 z-50 rounded-full bg-white p-4 text-black shadow-lg"
+      class="fixed left-4 top-4 z-50 rounded-full bg-white p-4 text-black shadow-lg sr-only focus:not-sr-only"
       onfocus={handleFocus}
       onblur={handleBlur}
       onclick={handleClick}
@@ -142,7 +142,7 @@
 
     <!-- Mobile Menu -->
     <div
-      class="sr-only absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform focus:not-sr-only focus:outline-teal-800 dark:bg-slate-950/90 dark:text-slate-100 focus:dark:outline-pink-950 lg:hidden"
+      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform focus:outline-teal-800 dark:bg-slate-950/90 dark:text-slate-100 focus:dark:outline-pink-950 lg:hidden"
       class:scale-y-100={isMenuOpen}
       class:scale-y-0={!isMenuOpen}
     >
@@ -220,10 +220,5 @@
 <style>
   .topbar {
     transition: box-shadow 0.5s ease-in-out;
-  }
-
-  /* Ensure the link is hidden from view but still accessible to screen readers when not focused */
-  .skip-link:not(:focus) {
-    @apply sr-only;
   }
 </style>
