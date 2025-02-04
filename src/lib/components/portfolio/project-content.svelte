@@ -12,7 +12,7 @@
 
 <div class="flex min-h-lvh w-full flex-col gap-20 p-6 pt-14 md:w-2/3 lg:w-1/2">
   <div class="flex flex-col items-center gap-2">
-    <h2>{content.projectCatchPhrase}</h2>
+    <h2 class="text-center">{content.projectCatchPhrase}</h2>
     <span>Projektets bakgrund</span>
   </div>
   <div class="flex flex-col gap-8 lg:flex-row">

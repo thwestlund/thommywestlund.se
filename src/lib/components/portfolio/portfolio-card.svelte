@@ -28,9 +28,3 @@
     </div></a
   >
 </div>
-
-<style>
-  .ds {
-    filter: drop-shadow(0 0 2px rgba(244, 255, 188, 0.8));
-  }
-</style>

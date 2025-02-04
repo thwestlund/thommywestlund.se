@@ -12,8 +12,13 @@
 </script>
 
 <div
-  class="flex w-full flex-col items-center gap-4 bg-pink-50 py-16 shadow-lg dark:bg-sky-950/30"
+  class="flex w-full flex-col items-center gap-4 bg-pink-50 py-4 shadow-lg dark:bg-sky-950/30"
 >
+  <div class="w-full px-6 text-sm md:w-2/3 lg:w-1/2">
+    <a href="/portfolio"
+      >← <span class="underline">Tillbaka till Portfolio</span></a
+    >
+  </div>
   <div
     class="flex w-full flex-col items-center p-6 md:w-2/3 lg:w-1/2 lg:flex-row"
   >

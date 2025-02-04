@@ -32,8 +32,8 @@
   {#if textLeft || isSmallScreen}
     <TextSection {sectionTitle} {sectionContent} styling=" xl:min-w-80" />
   {/if}
+  <ImageSection src={imageSrc} alt={imageAlt} fullWidth={false} />
   {#if !textLeft && !isSmallScreen}
-    <ImageSection src={imageSrc} alt={imageAlt} fullWidth={false} />
     <TextSection {sectionTitle} {sectionContent} />
   {/if}
 </div>

@@ -8,9 +8,16 @@
   import { type Section as SectionT } from "./project-content";
 
   const { ...content }: SectionT = $props();
+
+  const gridColsMap: { [key: number]: string } = {
+    1: "lg:grid-cols-1",
+    2: "lg:grid-cols-2",
+    3: "lg:grid-cols-3",
+    4: "lg:grid-cols-4",
+  };
 </script>
 
-<div class="grid flex-wrap gap-8 lg:gap-16 lg:grid-cols-{content.columns}">
+<div class="grid gap-8 lg:gap-16 {gridColsMap[content.columns]}">
   {#each content.content as item}
     {#if item.type === SectionType.Text}
       <TextSection
