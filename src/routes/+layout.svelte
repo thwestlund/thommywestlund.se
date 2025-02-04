@@ -79,6 +79,15 @@
   }
 </script>
 
+<a
+href="#main-content"
+class="absolute rounded-full bg-white p-1 text-black shadow-lg sr-only focus:not-sr-only"
+onfocus={handleFocus}
+onblur={handleBlur}
+onclick={handleClick}
+>
+Hoppa till huvudinnehållet
+</a>
 <div class="flex min-h-screen flex-col items-center" id="parent">
   <nav
     class="topbar xl: sticky top-0 z-50 flex w-full flex-row items-center justify-end gap-4 bg-zinc-50/75 py-2 backdrop-blur-sm transition-all dark:bg-slate-950/75 sm:justify-end lg:justify-center {scrollDirection ===
@@ -86,15 +95,7 @@
       ? 'shadow-md'
       : 'shadow-none'}"
   >
-    <a
-      href="#main-content"
-      class="fixed left-4 top-4 z-50 rounded-full bg-white p-4 text-black shadow-lg sr-only focus:not-sr-only"
-      onfocus={handleFocus}
-      onblur={handleBlur}
-      onclick={handleClick}
-    >
-      Hoppa till huvudinnehållet
-    </a>
+
     <div class="hidden flex-row gap-4 lg:visible lg:flex">
       <MenuItem name={"Hem"} href={"/"} />
       <MenuItem name={"Färdigheter"} href={"/#skills"} />
@@ -148,12 +149,12 @@
     >
       <ul class="flex flex-col">
         <li class="contents">
-          <a href="/#home" class="p-4" onclick={() => (isMenuOpen = false)}>
+          <a href="/#home" class="p-4" onclick={() => (isMenuOpen = false)} tabindex={isMenuOpen ? 0 : -1}>
             Hem
           </a>
         </li>
         <li class="contents">
-          <a href="/#skills" class="p-4" onclick={() => (isMenuOpen = false)}>
+          <a href="/#skills" class="p-4" onclick={() => (isMenuOpen = false)} tabindex={isMenuOpen ? 0 : -1}>
             Färdigheter
           </a>
         </li>
@@ -162,17 +163,18 @@
             href="/#experience"
             class="p-4"
             onclick={() => (isMenuOpen = false)}
+            tabindex={isMenuOpen ? 0 : -1}
           >
             Erfarenheter
           </a>
         </li>
         <li class="contents">
-          <a href="/portfolio" class="p-4" onclick={() => (isMenuOpen = false)}>
+          <a href="/portfolio" class="p-4" onclick={() => (isMenuOpen = false)} tabindex={isMenuOpen ? 0 : -1}>
             Portfolio
           </a>
         </li>
         <li class="contents">
-          <a href="/#contact" class="p-4" onclick={() => (isMenuOpen = false)}>
+          <a href="/#contact" class="p-4" onclick={() => (isMenuOpen = false)} tabindex={isMenuOpen ? 0 : -1}>
             Kontakt
           </a>
         </li>
