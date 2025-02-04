@@ -87,7 +87,7 @@
       : 'shadow-none'}"
   >
     <a
-      href="#main"
+      href="#main-content"
       class="skip-link fixed left-4 top-4 z-50 rounded-full bg-white p-4 text-black shadow-lg"
       onfocus={handleFocus}
       onblur={handleBlur}

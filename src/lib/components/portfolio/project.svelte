@@ -6,7 +6,7 @@
   let { ...content }: Project = $props();
 </script>
 
-<main>
+<main id="main-content">
   <div class="flex w-full flex-col items-center gap-4">
     <Header {...content.ProjectHeader} />
     <Content {...content.ProjectContent} />
