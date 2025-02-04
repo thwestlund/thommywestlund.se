@@ -9,16 +9,11 @@
   let lastScrollY = 0; // Tracks the last scroll position
   let isMenuOpen = $state(false);
   let isDarkMode = $state(false);
+  let focused = $state(false);
   const linkedin = import.meta.env.VITE_PUBLIC_LINKEDIN;
 
   onMount(() => {
     window.addEventListener("scroll", handleScroll);
-    const sections = document.querySelectorAll("section, h1");
-    const options = {
-      root: document.querySelectorAll("nav"), // Use the viewport as the root
-      rootMargin: "10%", // Adjust the bottom margin to trigger earlier
-      threshold: 1.0, // Trigger when 10% of the element is visible
-    };
     const savedTheme = localStorage.getItem("theme");
 
     if (savedTheme) {
@@ -62,6 +57,26 @@
       root.classList.remove("dark");
     }
   }
+
+  function handleFocus() {
+    focused = true;
+  }
+
+  function handleBlur() {
+    focused = false;
+  }
+
+  function handleClick() {
+    const mainContent = document.querySelector("main");
+    if (mainContent) {
+      mainContent.setAttribute("tabindex", "-1");
+      mainContent.focus();
+
+      setTimeout(() => {
+        mainContent.removeAttribute("tabindex");
+      }, 100);
+    }
+  }
 </script>
 
 <div class="flex min-h-screen flex-col items-center" id="parent">
@@ -71,6 +86,15 @@
       ? 'shadow-md'
       : 'shadow-none'}"
   >
+    <a
+      href="#main"
+      class="skip-link fixed left-4 top-4 z-50 rounded-full bg-white p-4 text-black shadow-lg"
+      onfocus={handleFocus}
+      onblur={handleBlur}
+      onclick={handleClick}
+    >
+      Hoppa till huvudinnehållet
+    </a>
     <div class="hidden flex-row gap-4 lg:visible lg:flex">
       <MenuItem name={"Hem"} href={"/"} />
       <MenuItem name={"Färdigheter"} href={"/#skills"} />
@@ -118,7 +142,7 @@
 
     <!-- Mobile Menu -->
     <div
-      class="absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform dark:bg-slate-950/90 dark:text-slate-100 lg:hidden"
+      class="sr-only absolute top-16 w-full origin-top bg-zinc-50/95 p-4 text-gray-700 shadow-lg backdrop-blur-sm transition-transform focus:not-sr-only focus:outline-teal-800 dark:bg-slate-950/90 dark:text-slate-100 focus:dark:outline-pink-950 lg:hidden"
       class:scale-y-100={isMenuOpen}
       class:scale-y-0={!isMenuOpen}
     >
@@ -195,5 +219,10 @@
 <style>
   .topbar {
     transition: box-shadow 0.5s ease-in-out;
+  }
+
+  /* Ensure the link is hidden from view but still accessible to screen readers when not focused */
+  .skip-link:not(:focus) {
+    @apply sr-only;
   }
 </style>
