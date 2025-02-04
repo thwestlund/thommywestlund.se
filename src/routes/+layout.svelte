@@ -180,8 +180,9 @@
     </div>
   </nav>
 
-  {@render children()}
-
+  <main id="main-content" class="flex w-full justify-center ">
+    {@render children()}
+  </main>
   <footer
     class="mt-32 flex w-full justify-center bg-teal-900 pt-5 text-slate-100 dark:bg-pink-900"
   >

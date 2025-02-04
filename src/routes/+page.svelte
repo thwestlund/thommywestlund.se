@@ -22,7 +22,7 @@
       <h1 class="font-thin" id="home">Thommy Westlund</h1>
     </div>
   </header>
-  <main id="main-content" class="flex w-full flex-col items-center gap-8">
+  <div class="flex w-full flex-col items-center gap-8">
     <section
       class="flex w-full scroll-py-96 flex-col items-center gap-8 bg-pink-50 py-14 shadow-lg dark:bg-slate-900 dark:shadow-slate-950"
       id="skills"
@@ -73,5 +73,5 @@
         <LinkBtn name="LinkedIn" href={linkedin} />
       </div>
     </section>
-  </main>
+  </div>
 </div>

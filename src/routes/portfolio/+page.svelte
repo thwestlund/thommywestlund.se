@@ -9,7 +9,7 @@
 
 <div class="flex min-h-svh w-10/12 flex-col gap-32 pt-16 md:w-2/3 lg:w-1/2">
   <header><h1>Portfolio</h1></header>
-  <main id="main-content">
+  <div>
     <div class="flex flex-wrap justify-center gap-4">
       <PortfolioCard
         logo={pedestrian}
@@ -42,5 +42,5 @@
         path="/portfolio/laroplattformen"
       />
     </div>
-  </main>
+  </div>
 </div>

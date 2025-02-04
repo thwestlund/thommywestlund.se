@@ -85,7 +85,7 @@
   }
 </script>
 
-<main id="main-content" class="flex min-h-screen flex-col items-center gap-8 bg-gray-100 p-8">
+<div class="flex min-h-screen flex-col items-center gap-8 bg-gray-100 p-8">
   <h1 class="text-4xl font-bold text-gray-800">Tic Tac Toe</h1>
 
   <div class="text-2xl font-semibold text-gray-700">
@@ -125,4 +125,4 @@
   >
     Nytt spel
   </button>
-</main>
+</div>
