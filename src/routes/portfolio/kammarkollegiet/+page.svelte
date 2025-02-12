@@ -12,6 +12,7 @@
   import wireframing from "$lib/assets/images/undraw_wireframing_d3cx.svg";
   import backlog from "$lib/assets/images/kammarkollegiet-backlog.webp";
   import sera from "$lib/assets/images/sera.webp";
+  import sera2 from "$lib/assets/images/sera_2.webp";
 
   const content: ProjectType = {
     ProjectHeader: createProjectHeader({
@@ -99,6 +100,10 @@
             createImageSection({
               src: sera,
               alt: "Bilden visar prototypen på systemet SERA. Det är är strukturerat som en tabell med flikar som lyder Administrationsbolag, Omställningsorganisationer och Arbetsgivare. Till höger finns en knapp som lyder Lägg till, vilket är där användaren kan lägga till nya organisationer manuellt.",
+            }),
+            createImageSection({
+              src: sera2,
+              alt: "Bilden visar prototypen på systemet SERA. Bilden visar en vy över hantering av ansökan.",
             }),
           ],
         }),

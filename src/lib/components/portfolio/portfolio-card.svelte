@@ -4,7 +4,7 @@
     title = "Mitt projekt",
     company = "Forge IT Solutions AB",
     path = "/portfolio",
-    cardColor = "dark:bg-slate-800 bg-teal-900 text-slate-100",
+    cardColor = "dark:bg-slate-800 bg-neutral-200 dark:text-slate-100 text-slate-800",
   } = $props();
 </script>
 
