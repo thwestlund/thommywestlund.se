@@ -33,8 +33,7 @@
       ],
       technologies: ["Figma", "SiteVision CMS", "Adobe XD"],
       timeline: "December 2023 - Juni 2024",
-      prototypeLink:
-        "https://www.figma.com/proto/cxEGbgCIRFqmUD8mpa4IKk/%C3%96rnsk%C3%B6ldsviks-Kommun?page-id=134%3A5163&node-id=480-11470&viewport=536%2C-657%2C0.07&t=5C2BLnw8NaVuJr3P-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=480%3A11009&show-proto-sidebar=1",
+      prototypeLink: "https://www.figma.com/proto/cxEGbgCIRFqmUD8mpa4IKk/%C3%96rnsk%C3%B6ldsviks-Kommun?node-id=265-5821&t=L4xWcydeALSzdTBy-1"
     }),
 
     ProjectContent: createProjectContent({
