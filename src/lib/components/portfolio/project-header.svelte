@@ -29,7 +29,7 @@
       </div>
       <div class="flex flex-col gap-14 xl:flex-row">
         <div class="flex flex-col gap-8">
-          <div class="flex flex-row gap-12">
+          <div class="flex sm:flex-row gap-12 flex-col">
             <div class="flex flex-1 flex-col gap-3">
               <h2 class="text-2xl">Utmaning</h2>
               <p>{@html content.challenge}</p>
@@ -44,7 +44,7 @@
             </div>
           </div>
 
-          <div class="flex flex-row gap-12">
+          <div class="flex flex-col sm:flex-row gap-12">
             <div class="flex flex-1 flex-col gap-3">
               <h2 class="text-2xl">Leverabler</h2>
               <ul class="flex list-inside list-disc flex-col gap-2">
