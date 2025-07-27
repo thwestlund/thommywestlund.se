@@ -10,6 +10,40 @@ export interface Experience {
 
 export const exp: Experience[] = [
   {
+    title: "Inter IKEA Group",
+    role: "Tillgänglighetsingenjör",
+    startDate: "Apr. 2025",
+    endDate: "Pågående",
+    location: "Malmö, Sverige",
+    paragraphs: [
+      "Inter IKEA hade behovet av en tekniskt tung tillgänglighetsexpert för att driva tillgänglighetsutvecklingen för hela IKEA. Jag bidrar med att:"
+    ],
+    bulletList: [
+      "Utvärdera existerande mognad inom tillgänglighet",
+      "Ta fram långsiktig teknisk strategi och lösningar för hela IKEA",
+      "Rådgivning inom tillgänglighet - Teknisk, UX/UI och strategisk",
+      "Brygga samarbeten mellan franchisegivare och tagare",
+      "Diskutera och arbeta fram en större strategisk plan inom digitalt ägande och mognad."
+    ]
+  },
+  {
+    title: "Forge IT Solutions AB",
+    role: "Grundare",
+    startDate: "Dec. 2024",
+    endDate: "Pågående",
+    location: "Malmö, Sverige",
+    paragraphs: [
+      "Startat konsultbolag där jag erbjuder konsulttjänster. Min expertis är:"
+    ],
+    bulletList: [
+      "Tillgänglighet",
+      "UX/UI-Design",
+      "Frontendutveckling",
+      "Arkitektur",
+      "Fullstackutveckling."
+    ]
+  },
+  {
     title: "Mercedes-Benz Finans Sverige AB & Danmark AS",
     role: "Teknisk Produktägare",
     startDate: "Aug. 2024",
