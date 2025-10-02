@@ -17,6 +17,7 @@
     "test:report": "playwright show-report"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
     "@iconify/svelte": "^4.2.0",
     "@playwright/test": "^1.55.1",
     "@sveltejs/adapter-auto": "^3.0.0",
@@ -26,6 +27,7 @@
     "autoprefixer": "^10.4.20",
     "css": "^3.0.0",
     "postcss": "^8.4.49",
+    "playwright-core": "^1.55.1",
     "prettier": "^3.4.2",
     "prettier-plugin-svelte": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
@@ -38,7 +40,6 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
-    "@axe-core/playwright": "^4.10.2",
     "lucide-svelte": "^0.469.0"
   }
 }
