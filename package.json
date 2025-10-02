@@ -9,10 +9,16 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "prettier": "npx prettier --write ."
+    "prettier": "npx prettier --write .",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report"
   },
   "devDependencies": {
     "@iconify/svelte": "^4.2.0",
+    "@playwright/test": "^1.55.1",
     "@sveltejs/adapter-auto": "^3.0.0",
     "@sveltejs/adapter-static": "^3.0.8",
     "@sveltejs/kit": "^2.13.0",
@@ -32,6 +38,7 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.10.2",
     "lucide-svelte": "^0.469.0"
   }
 }
