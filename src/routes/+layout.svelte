@@ -194,7 +194,7 @@ Hoppa till huvudinnehållet
       <div class="flex w-10/12 flex-row gap-4 md:w-2/3 lg:w-1/2">
         <div class="flex w-10/12 flex-col gap-2 md:w-2/3 lg:w-1/2">
           <h3>Kontakt</h3>
-          <a href={linkedin} class="text-sm hover:underline">LinkedIn</a>
+          <a href='https://www.linkedin.com/in/thommy-westlund-02090650/' class="text-sm hover:underline">LinkedIn</a>
           <a
             href={"mailto:" + import.meta.env.VITE_CONTACT_EMAIL}
             class="text-sm hover:underline">Maila mig</a
