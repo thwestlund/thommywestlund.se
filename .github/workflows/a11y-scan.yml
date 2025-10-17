@@ -8,7 +8,13 @@ jobs:
       - uses: github/accessibility-scanner@v2
         with:
           urls: | # Provide a newline-delimited list of URLs to scan; more information below.
-            REPLACE_THIS
-          repository: REPLACE_THIS/REPLACE_THIS # Provide a repository name-with-owner (in the format "primer/primer-docs"). This is where issues will be filed and where Copilot will open PRs; more information below.
+            thommy.westlund.se
+            https://thommywestlund.se/portfolio
+            https://thommywestlund.se/portfolio/jordbruksverket
+            https://thommywestlund.se/portfolio/kammarkollegiet
+            https://thommywestlund.se/portfolio/ornskoldsviks-kommun
+            https://thommywestlund.se/portfolio/ornskoldsviks-hamn-och-logistik
+            https://thommywestlund.se/portfolio/laroplattformen
+          repository: https://github.com/thwestlund/thommywestlund.se # Provide a repository name-with-owner (in the format "primer/primer-docs"). This is where issues will be filed and where Copilot will open PRs; more information below.
           token: ${{ secrets.GH_TOKEN }} # This token must have write access to the repo above (contents, issues, and PRs); more information below. Note: GitHub Actions’ `GITHUB_TOKEN` (https://docs.github.com/en/actions/tutorials/authenticate-with-github_token) cannot be used here.
-          cache_key: REPLACE_THIS # Provide a filename that will be used when caching results. We recommend including the name or domain of the site being scanning.
+          cache_key: cached_results-thommywestlund.json # Provide a filename that will be used when caching results. We recommend including the name or domain of the site being scanning.
