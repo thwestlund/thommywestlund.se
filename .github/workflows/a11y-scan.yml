@@ -8,7 +8,7 @@ jobs:
       - uses: github/accessibility-scanner@v2
         with:
           urls: | # Provide a newline-delimited list of URLs to scan; more information below.
-            thommy.westlund.se
+            https://thommy.westlund.se
             https://thommywestlund.se/portfolio
             https://thommywestlund.se/portfolio/jordbruksverket
             https://thommywestlund.se/portfolio/kammarkollegiet
