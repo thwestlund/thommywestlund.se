@@ -29,7 +29,7 @@
         "Hur säkerställer vi att applikationen uppfyller tillgänglighetskraven enligt DOS-lagen och EN 301 549?",
       roles: [
         "UX/UI-designer",
-        "Tillgänglighetsexpert",
+        "Tillgänglighets-expert",
         "Testare",
         "Kravställare",
       ],
