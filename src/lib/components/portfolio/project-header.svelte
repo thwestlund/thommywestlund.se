@@ -63,13 +63,6 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center xl:justify-start">
-          <img
-            src={imageUrl}
-            alt={content.projectImage.alt}
-            class="ratio max-w-80"
-          />
-        </div>
       </div>
       <div class="flex flex-row">
         <div class="flex flex-1 flex-col gap-3">
