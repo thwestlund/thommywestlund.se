@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Thommy Westlund</title>
+</svelte:head>
+
 <script lang="ts">
   import Skill from "$lib/components/skill.svelte";
   import skills from "$lib/assets/data/skills";

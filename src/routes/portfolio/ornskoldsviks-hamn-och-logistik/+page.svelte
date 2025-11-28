@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Örnsköldsviks hamn & logistik - Thommy Westlund</title>
+</svelte:head>
+
 <script lang="ts">
   import {
     createImageSection,

@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Portfolio - Thommy Westlund</title>
+</svelte:head>
+
 <script lang="ts">
   import learning from "$lib/assets/images/undraw_learning-sketchingsh.svg";
   import pedestrian from "$lib/assets/images/undraw_pedestrian-crossing_exov.svg";

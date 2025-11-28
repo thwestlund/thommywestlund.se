@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Geofoto - Thommy Westlund</title>
+</svelte:head>
+
 <script lang="ts">
   import Project from "$lib/components/portfolio/project.svelte";
   import { createProjectHeader } from "$lib/components/portfolio/project-header";

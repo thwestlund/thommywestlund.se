@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Örnsköldsviks kommuns - Thommy Westlund</title>
+</svelte:head>
+
 <script lang="ts">
   import {
     createImageSection,

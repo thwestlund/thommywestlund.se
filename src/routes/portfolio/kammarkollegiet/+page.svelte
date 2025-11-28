@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>Projekt SERA - Thommy Westlund</title>
+</svelte:head>
+
 <script lang="ts">
   import {
     createImageSection,
